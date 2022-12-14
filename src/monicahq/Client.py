@@ -1,10 +1,10 @@
-from Session import Session
+from monicahq import Session
 import requests, json
 
 class Client():
     def __init__(self, session):
         """Initialize based upon a session"""
-        if type(session) != Session:
+        if type(session) != Session.Session:
             raise TypeError(f"session variable is not of type monicahq.Session.Session, but {type(session)}")
 
         self.session = session
