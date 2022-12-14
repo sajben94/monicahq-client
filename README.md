@@ -15,8 +15,8 @@ Usage
 Create connection
 -----------------
 
-    from Session import Session
-    from Client import Client
+    from monicahq.Session import Session
+    from monicahq.Client import Client
     session = Session("monicahq.com", "API_TOKEN")
     c = Client(session)
 
