@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='monicahq-client',
-    version='0.0.2',
+    version='0.1.0',
     license='MIT',
     author="Darko Sajben",
     author_email='sajbendarko94@gmail.com',
@@ -15,5 +15,4 @@ setup(
           'requests',
           'json',
       ],
-
 )
