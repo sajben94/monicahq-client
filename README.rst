@@ -1,10 +1,8 @@
 
 
-Example Project
+MonicaHQ Client
 ===============
-This is an example project that is used to demonstrate how to publish
-Python packages on PyPI. To take a look at the step by step guide on how to 
-do so, make sure you read `my article on Towards Data Science <https://towardsdatascience.com/how-to-upload-your-python-package-to-pypi-de1b363a1b3>`_.
+This is MonicaHQ API Wrapper for convinient access to data.
 
 Installing
 ============
@@ -15,4 +13,19 @@ Installing
 
 Usage
 =====
+
+Create connection
+=================
+.. code-block:: python
+    from Session import Session
+    from Client import Client
+    session = Session("monicahq.com", "API_TOKEN")
+    c = Client(session)
+
+Search for contacts
+===================
+.. code-block:: python
+    data = c.search_contacts()
+    for contact in data['data']:
+        print(contact['complete_name'])
 
